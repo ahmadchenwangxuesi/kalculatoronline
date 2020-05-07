@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="=an example of creating a calculator using javascript">
+    <meta name="viewport content=" width=device-width,initial>
+    <link rel="stylesheet" href="bulma.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="field">
+            <label class="label">Value 1:</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Value 1" id="value1">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Value 2:</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Value 2" id="value2">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Operator:</label>
+            <div class="control">
+                <div class="select">
+                    <select id="operator">
+                        <option value="add">Add</option>
+                        <option value="min">Minus</option>
+                        <option value="div">Divide</option>
+                        <option value="mul">Multiply</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" type="button" onclick="calc()">Calculate</button>
+            </div>
+        </div>
+        <h1 class="title" id="result"></h1>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
